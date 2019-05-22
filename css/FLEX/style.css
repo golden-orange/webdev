@@ -1,0 +1,118 @@
+
+.wrapper {
+    display: block;
+    height: 300px;
+}
+
+.d01 {
+    background: yellow;
+}
+
+.d02 {
+    background: blue;
+} 
+
+.d03 {
+    background: gray;
+}
+
+.d04 {
+    background: purple;
+}
+
+.d05 {
+    background: navy;
+}
+
+.d06 {
+    background: violet;
+}
+
+.d07 {
+    background: orange;
+}
+
+
+@media screen and (min-width: 640px) {
+
+    body {
+        height: 100vh;
+        border: 12px solid black;
+        color: navy;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        background: gold;
+    }
+
+    .box {
+        box-sizing: border-box;
+        flex-basis: 200px;
+        font-size: 2rem;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .d04 {
+        flex-shrink: 0;
+    }
+
+    .d01 {
+        background: yellow;
+    }
+
+    .d02 {
+        background: blue;
+    } 
+
+    .d03 {
+        background: gray;
+    }
+
+    .d04 {
+        background: purple;
+    }
+
+    .d05 {
+        background: navy;
+    }
+
+    .d06 {
+        background: violet;
+    }
+
+    .d07 {
+        background: orange;
+    }
+}
+
+.wrapperb {
+    display: flex;
+
+    background: orange;
+    
+}
+
+.bbox {
+    box-sizing: border-box;
+    flex: 1 1 200px;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.b01, .b02, .b03 {
+    border: 2px solid red;
+}
+
+.b02 {
+    flex-shrink: 0;
+}
+
