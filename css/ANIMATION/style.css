@@ -1,0 +1,114 @@
+h1, h2 {
+    text-align: center;
+}
+
+.box {
+    height: 150px;
+    border: 10px solid black;
+    border-radius: 20px;
+    flex-basis: 300px;
+}
+
+.b01 {
+    background: orange;
+}
+
+.b02 {
+    background: orangered;
+}
+
+.b03 {
+    outline: none;
+    background: red;
+}
+
+.b03:hover {
+    background: rgba(255, 215, 0.1);
+    transform: scale(1.001);
+    transform-origin: right top;
+    border: 10px solid darkgoldenrod;
+    transition-property: background, border-color, border-width;
+    transition-delay: 0, 0s, 0;
+    transition-duration: 0.2s, 0.5s, 1.5s;
+}
+
+
+.inputs {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+#button {
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: whitesmoke;
+    background: salmon;
+    box-shadow: 0 6px saddlebrown;
+    /* position: relative; */
+}
+
+#button:hover {
+    background: sandybrown;
+    box-shadow: 0 4px saddlebrown;
+    transform: translateY(2px);
+    /* top: 2px; */
+}
+
+
+#button:active {
+    border-radius: 15px;
+    background: salmon;
+    box-shadow: none;
+    transform: translateY(4px);
+    /* top: 6px; */
+}
+
+#email, #button {
+    flex-basis: 50%;
+    height: 75px;
+}
+
+#email:focus {
+    background: gold;
+}
+
+
+#button:focus {
+    border-radius: 15px;
+}
+
+/* HOVER */
+.b01:hover {
+    background: seashell;
+    transition: 2s, 0.5s;
+}
+
+
+@media screen and (min-width: 640px) {
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .box {
+        height: 350px;
+    }
+
+    .b01 {
+        background: orange;
+    }
+
+    .b02 {
+        background: orangered;
+    }
+
+    .b03 {
+        background: red;
+    }
+}
+
